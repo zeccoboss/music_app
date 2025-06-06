@@ -1,0 +1,2999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ZECCO">
+    <meta name="description" content="A music application built with HTNL, CSS and JavaScript">
+    <meta name="theme-color" content="red"> 
+    <title>ZECCO Music</title>
+    <script src="https://kit.fontawesome.com/0e02d2da8e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="outter_container">
+
+        <header class="header">
+            <nav class="header_desktop_nav">
+                <div class="app_details">
+                    <figure class="logo">
+                        <img src="./img/logo.jpg" alt="App logo" class="app_logo" id="app-logo" width="100" height="100" loading="lazy">
+                    </figure>
+    
+                    <div class="app_name">
+                        <h1>ZECCO</h1>
+                    </div>
+                </div>
+                
+                <form action="" class="search_form" id="search-form">
+                    <button type="button" aria-label="Search" class="search_button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" name="" id="search-input" class="search_input" placeholder="Search music" aria-label="Search music">
+                    <button type="reset" aria-label="Clear input" class="clear_input">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </form>
+
+                <div class="profile">
+                    <figure title="User profle" aria-label="User profile" class="profile_picture_container">
+                        <img src="./img/default_profile.webp" alt="User profile picture" class="profile_picture" id="profile-img">
+                        <figcaption class="caption">Profile</figcaption>
+                    </figure>
+                </div>
+            </nav>
+    
+            <nav class="header_mobile_nav">
+                <figure class="logo">
+                    <img src="./img/logo.jpg" alt="App logo" class="app_logo" id="app-logo" width="100" height="100" loading="lazy">
+                </figure>
+                
+                <form action="" class="search_form" id="search-form">
+                    <button type="button" aria-label="Search" class="search_button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" name="" id="search-input" class="search_input" placeholder="Search music" aria-label="Search music">
+                    <button type="reset" aria-label="Clear input" class="clear_input">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </form>
+
+                <div class="profile">
+                    <figure title="User profle" aria-label="User profile" class="profile_picture_container">
+                        <img src="./img/default_profile.webp" alt="User profile picture" class="profile_picture" id="profile-img">
+                        <figcaption class="caption">Profile</figcaption>
+                    </figure>
+                </div>
+            </nav>
+        </header>
+
+        <div class="inner_container ">
+            <main class="main">
+                <section class="home_section home_section_active">
+                    <h2>Songs</h2>
+
+                    <div class="music_container">
+
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                                                <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                                                <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                                                <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                                                <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                                                <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+                        <div class="music_card">
+                            <figure class="home_music_image_container">
+                                <img src="./img/image.png" alt="Music image" class="home_music_image" loading="lazy" width="250" height="200">
+                                <figcaption class="music_image_caption">Music image</figcaption>
+                            </figure>
+    
+                            <div class="music_details">
+                                <h3 class="music_title" id="music-title">Song title</h3>
+                                <p class="music_artist_name" id="music-artisit-name">Artist name</p>
+                            </div>
+    
+                            <div class="music_menu"></div>
+                        </div>
+
+                        
+                    </div>
+                </section>
+
+                <section class="favorite_section">
+                    <h2>Favorite</h2>
+
+
+                </section>
+
+                <section class="search_section">
+                    <h2>Search</h2>
+
+
+                </section>
+
+                
+                <section class="settings_section">
+                    <h2>Settings</h2>
+
+
+                </section>   
+
+                <section class="library_section">
+                    <h2>Library</h2>
+
+
+                </section>
+
+                <section class="now_playing" id="now-playing">
+                    <figure>
+                        <img src="./img/music_image.jpeg" alt="Playing" class="curent_music_photo" id="curently-playing" aria-label="Curently Playing" width="50" height="50" loading="lazy">
+                        <figcaption class="current_music_caption">Curently Playing</figcaption>
+                    </figure>
+
+                    <div>
+                        <button aria-label="Play/Pause" class="play_pause_button">
+                            <i class="fa-solid fa-play"></i>
+                        </button>
+
+                        <button class="play_list_button">
+                            <img src="./img/music-playlist.png" alt="" width="50" height="50" class="play_list_icon">
+                        </button>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="aside ">
+                <div class="aside_content">
+                    <h2>Now Playing</h2>
+
+                    <figure class="music_image_container">
+                        <img src="./img/music_image.jpeg" alt="Music cover image" class="music_image_cover" id="music-image-cover" loading="lazy" width="200" height="200">
+                        <figcaption class="music_cover_caption">Music cover</figcaption>
+                    </figure>
+
+                    <div class="song_details">
+                        <div>
+                            <h3 class="song_title" id="song-title">Song Title</h3>
+                            <p class="artist_name" id="artist-name">Artist Name</p>
+                        </div>
+
+                        <button aria-label="Download song button" class="download_button" id="download-button">
+                            <i class="fa-regular fa-circle-down"></i>
+                        </button>
+                    </div>
+
+                    <div class="time_progress">
+                        <span class="current_time">0:00</span>
+
+                        <form action="" class="music_range_form">
+                            <input type="range" name="" value="0" id="" min="0" max="100" class="music_range_input" aria-label="Music progress range">
+                        </form>
+
+                        <span class="current_time">0:00</span>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button aria-label="Repeat/Loop/Random" class="random_button" id="randon-button"><i class="fa-solid fa-repeat"></i></button>
+
+                    <button aria-label="Previous" class="previous_button" id="previous-button">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+
+                    <button aria-label="Play/Pause" class="play_pause_button">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                    
+                    <button aria-label="Next" class="next_button" id="next-button"><i class="fa-solid fa-forward"></i></button>
+
+                    <button aria-label="Sleep timer" class="sleep_timer_button" id="sleep-timer-button"><i class="fa-solid fa-clock"></i></button>
+                </div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <nav class="footer_nav">
+                <ul class="footer_nav_list">
+                    <li id="home" class="home active_section">
+                        <i class="fa-solid fa-house"></i>                   
+                       <br>
+                        <span>Home</span>
+                    </li>
+
+                    <li id="favorite" class="favorite">
+                        <i class="fa-solid fa-star"></i>
+                        <br>
+                        <span>Favorites</span>
+                    </li>
+                    
+                    <li id="settings" class="settings">
+                        <i class="fa-solid fa-gear"></i>
+                        <br>
+                        <span>Settings</span>
+                    </li>
+                    
+                    <li id="library" class="library">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        <br>
+                        <span>Library</span>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

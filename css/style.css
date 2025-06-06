@@ -1,0 +1,795 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BGCOLOR: hsl(249, 100%, 5%);
+    --TEXTCOLOR: hsl(0, 0%, 90%);
+    --PADDING: 0.5rem;
+    --MARGIN: 0.5rem;
+    --NAVBGCOLOR: hsl(248, 100%, 11%);
+    --TRANSITION: all 0.5s ease-out;
+    --OPACITY: 0.8;
+    --BUTTONBGCOLOR: hsl(310, 100%, 50%);
+    --BUTTONBGHOVER: rgb(99, 7, 83);
+    --BUTTONCOLORHOVER:   hsl(0, 0%, 60%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    background: linear-gradient(to bottom, 
+        hsl(0, 4%, 17%),    
+        hsl(198, 94%, 6%),
+        hsl(263, 64%, 6%));
+    color: var(--TEXTCOLOR);
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.outter_container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header {
+    background-color: var(--NAVBGCOLOR);
+    background: linear-gradient(to bottom, 
+        hsl(198, 94%, 6%),
+        hsl(263, 64%, 6%));
+    height: 6rem;
+    padding: 0.8rem 1em 1rem 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header_mobile_nav {
+    display: none;
+}
+
+.header_desktop_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: var(--PADDING);
+    align-items: center;
+    align-content: center;
+}
+
+.app_details {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.app_details .app_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: var(--MARGIN);
+    transition: var(--TRANSITION);
+}
+
+.app_details .app_logo:hover {
+    transform: translateX(-0.3rem);
+    opacity: var(--OPACITY);
+}
+
+.app_name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: monospace;
+    text-decoration: 4px underline;
+    transform: translateY(-0.5rem);
+    text-underline-offset: 0.6rem;
+    transition: var(--TRANSITION);
+}
+
+.app_name:hover {
+    color: rgb(121, 121, 121);
+}
+
+.search_form{
+    position: relative;
+    width: 20rem;
+}
+
+.search_input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--BGCOLOR);
+    color: var(--TEXTCOLOR);
+    border: 1px solid var(--TEXTCOLOR);
+    padding: 0.8rem 2.5rem 0.8rem 2rem;
+    width: 20rem;
+}
+
+.clear_input {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--TEXTCOLOR);
+}
+
+.search_button {
+    position: absolute;
+    left: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--TEXTCOLOR);
+}
+
+.profile_picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;    
+    transition: var(--TRANSITION);
+    cursor: pointer;
+}
+
+.profile_picture:hover {
+    opacity: var(--OPACITY);  
+    transform: translateX(-0.3rem);
+}
+
+.caption  {
+    position: absolute;
+    left: -1000px;
+    color: red;
+}
+
+.inner_container {
+    display: flex;
+    height: calc(100vh - 6rem - 6rem);
+    position: relative;
+}
+
+.main {
+    width: calc(100% - 25rem);
+    padding-bottom: 3rem;
+    height: calc(100vh - 6rem - 6rem);
+}
+
+.active_section {
+    background-color: rgba(255, 242, 242, 0.096);
+    border-radius: 0.5rem;
+}
+
+.home_section,
+.search_section,
+.favorite_section,
+.library_section,
+.settings_section {
+    height: 0;
+    overflow: hidden;
+    transition: var(--TRANSITION);
+    animation: fade-active-section 1s 1  both;
+    scrollbar-width: thin;
+    scrollbar-color: var(--TEXTCOLOR);
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--TEXTCOLOR) transparent;
+}
+
+.home_section_active {
+    height: 100%;
+    padding: var(--PADDING) var(--PADDING) 1rem var(--PADDING);
+}
+
+.music_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: var(--MARGIN);
+}
+
+.music_card {
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 0px 0px 5px  hsla(0, 5%, 36%, 0.616);
+    background: linear-gradient(to bottom, hsl(0, 4%, 17%), hsl(198, 94%, 6%), hsl(263, 64%, 6%));
+    border-radius: 0.5rem;
+    cursor: pointer;
+    flex-grow: 1;
+    width: 6rem;
+    max-width: 8rem;
+}
+
+.home_music_image_container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.15rem 0;
+    height: 5rem;
+    border: 0.4rem;
+    margin-bottom: calc(var(--MARGIN) - 0.1rem);
+
+}
+
+.home_music_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
+
+.music_image_caption {
+    position: absolute;
+    left: -1000px;
+}
+
+.music_details {
+    padding: 0 0 var(--PADDING) calc(var(--PADDING) - 0.2rem);
+}
+
+.music_title {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.music_artist_name {
+    font-size: 0.6rem;
+} 
+
+.search_section_active {
+    height: 100%;
+}
+
+.favorite_section_active {
+    height: 100%;
+}
+
+.library_section_active {
+    height: 100%;
+}
+
+.settings_section_active {
+    height: 100%;
+}
+
+
+@keyframes fade-active-section {
+    0% {
+        opacity: 0;
+        color: rgba(240, 248, 255, 0.158);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.now_playing {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom, rgb(44, 41, 41), rgb(14, 6, 27));
+    color: white;
+    width: calc(100% - 24.8em);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: var(--PADDING);
+}
+
+.now_playing > div {
+    margin: 0 var(--MARGIN);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    padding: var(--MARGIN);
+}
+
+.curent_music_photo {
+    width: 2rem;
+    height: 2rem; 
+    border-radius: 0.2rem;  
+    box-sizing: 0px 0px 9px rgba(252, 252, 252, 0.632);
+    margin-left: var(--MARGIN);
+}
+
+.curently_playing {
+    width: 1rem;
+    height: 1rem;   
+}
+
+.play_list_button {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.play_list_icon {
+    width: 100%;
+    height: 100%;
+}
+
+.current_music_caption {
+    position: absolute;
+    left: -1000px;
+}
+
+.aside {
+    width: 25rem;
+    background-color: rgb(0, 0, 0);
+    /* background-image: linear-gradient(to bottom, hsl(0, 0%, 0%), hsl(120, 92%, 9%), hsl(60, 100%, 13%), hsl(120, 77%, 9%), hsl(0, 0%, 0%)); */
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 0%), hsl(280, 91%, 9%), hsl(242, 100%, 13%), hsl(267, 78%, 9%), hsl(0, 0%, 0%));
+    margin-left: var(--MARGIN);
+    padding: var(--PADDING);
+    overflow: hidden;
+    height: calc(100vh - 6rem - 6rem);
+    overflow: hidden;
+    display: grip;
+    grid-column: auto;
+    place-content: center;
+    place-items: center;
+    gap: 0.5rem;
+    transition: var(--TRANSITION);
+}
+
+.aside_content {
+    color: var(--TEXTCOLOR);
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.aside_content > h2 {
+    font-size: 1rem;
+    margin-bottom: calc(var(--MARGIN) + var(--MARGIN));
+}
+
+.music_image_cover {
+    margin: var(--MARGIN);
+    width: 13rem;
+    height: 13rem;
+    background-color: red;
+    border-radius: 1rem;
+    cursor: no-drop;
+}
+
+.music_cover_caption {
+    position: absolute;
+    left: -1000px;
+}
+
+.time_progress {
+    display: flex;
+    gap: 0.5rem;
+    padding: var(--PADDING);
+}
+
+.song_details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 var(--PADDING);
+}
+
+.song_title {
+    font-size: 0.9rem;
+}
+
+.artist_name {
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.download_button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    border: 1px solid var(--BGCOLOR);
+    color: var(--TEXTCOLOR);
+    background-color: var(--BUTTONBGCOLOR);
+    font-size: 1.2rem;
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    max-width: 17rem;
+    padding: 0 var(--PADDING);
+    transition: var(--TRANSITION);
+}
+
+.random_button,
+.previous_button,
+.play_pause_button,
+.next_button,
+.sleep_timer_button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    border: none;
+    outline: 2px solid var(--TEXTCOLOR);
+    color: var(--TEXTCOLOR);
+    background-color: var(--BUTTONBGCOLOR);
+    text-align: center;
+    transition: var(--TRANSITION);
+}
+
+.download_button:hover {
+    border: 1px solid rgb(58, 16, 67);
+}
+
+.controls > button:hover {
+    color: var(--BUTTONCOLORHOVER);
+    outline: 2px solid rgb(84, 84, 84);
+    background-color: var(--BUTTONBGHOVER);
+}
+
+.footer {
+    background-color: var(--NAVBGCOLOR);
+    background: linear-gradient(to bottom, 
+        hsl(198, 94%, 6%),
+        hsl(263, 64%, 6%));
+    height: 6rem;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+}
+
+.footer_nav_list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    padding: var(--PADDING);
+}
+
+.footer_nav_list li {
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    padding: var(--PADDING);
+    border-radius: 0.5rem;
+    transition: var(--TRANSITION);
+}
+
+.footer_nav_list li:hover {
+    background-color: rgba(255, 242, 242, 0.096);
+    transform: translateY(0.2rem);
+}
+
+.footer_nav_list li i {
+    margin: var(--MARGIN);
+    font-size: 1.5rem;
+}
+
+.footer_nav_list li span {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) { 
+    .header {
+        height: 5rem;
+    }
+
+    .header_desktop_nav {
+        padding: 0;
+    }
+
+    .main {
+        height: calc(100vh - 5rem - 5rem - 0.5rem);
+    }
+
+    .aside {
+        height: calc(100vh - 5rem - 5rem);        
+        top: 5rem;
+    }
+
+    .footer {
+        height: 5rem;
+    }
+
+    .footer_nav {
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer_nav_list > li{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_nav_list > span {
+        font-size: 0.8rem;
+        margin: 0;
+        
+    }
+} 
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .header_mobile_nav {
+        display: none;
+    }
+
+    .header {
+        height: 5rem;
+        padding-bottom: var(--PADDING);
+    }
+
+    .header_desktop_nav {
+        height: max-content;
+        padding: 0;
+    }
+
+    .app_details {
+        gap: 0.5rem;
+    }
+
+    .app_details .app_logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: 0.2rem 0 0 var(--MARGIN);
+    }
+
+    .app_name {
+        font-size: 1rem;
+    }
+
+    .search_input {
+        padding: 0.5rem 2rem 0.5rem 1.7rem;
+    }
+
+    .inner_container {
+        height: calc(100vh - 5rem - 5rem);
+        position: relative;
+    }
+
+    .main {
+        width: 100%;
+        margin-right: 0;
+        padding: var(--PADDING) var(--PADDING) 4rem var(--PADDING);
+        height: auto;
+        height: calc(100vh - 4.5rem - 4.5rem - 0.5rem);
+    }
+
+    .aside {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        bottom: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .aside_active{
+        height: calc(100vh - 5rem - 5rem);
+        top: 0;
+    }
+
+    .now_playing {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .no_scroll {
+        overflow: hidden;
+    }
+
+    .footer {
+        height: 5rem;
+        padding-top: var(--PADDING);
+    }
+
+    .footer_nav_list {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        height: 4.5rem;
+        padding-top: var(--PADDING);
+
+    }
+    
+    .header_desktop_nav {
+        display: none;
+    }
+
+    .header_mobile_nav {
+        display: flex;
+        justify-content: space-between;
+        padding: calc(var(--PADDING));
+        align-items: center;
+        align-content: center;
+    }
+
+    .search_form{
+        position: relative;
+        margin: 0 1.5rem 0 1.5rem;
+        width: fit-content;
+        width: unset;
+    }
+    
+    .search_input {
+        border-radius: 0.5rem;
+        display: inline-block;
+        padding: 0.4rem 2rem 0.4rem 1.7rem;
+        width: unset;
+    }   
+    
+    .search_button {
+        position: absolute;
+        left: 0.6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        color: var(--TEXTCOLOR);
+    }
+
+    .profile_picture {
+        width: 35px;
+        height: 35px;
+        margin: 0.2rem var(--MARGIN) 0 0;
+    }
+
+    .profile_picture:hover {
+        transform: translateX(-0.1rem);
+    }
+
+    .app_logo {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin: 0.2rem 0 0 var(--MARGIN);
+    }
+
+    .inner_container {
+        height: calc(100vh - 4.5rem - 4.5rem);
+        position: relative;
+    }
+
+    .main {
+        width: 100%;
+        margin-right: 0;
+        height: calc(100vh - 4.5rem - 4.5rem - 0.5rem);
+    }
+
+    .now_playing {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        padding: var(--PADDING);
+    }
+
+    .aside {
+        position: absolute;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        opacity: 0;
+        width: 100%;
+    }
+
+    .aside_active{
+        height: calc(100vh - 4rem - 4rem);
+        top: 0;
+        opacity: 1;
+    }
+
+    .music_image_cover {
+        width: 10rem;
+        height: 10rem;
+        margin: 2rem 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .music_image_cover:hover {
+        transform: rotate(360deg);   
+    }
+
+    .no_scroll {
+        overflow: hidden;
+    }
+
+    .footer {
+        height: 4.5rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top: var(--PADDING);
+
+    }
+
+    .footer_nav_list {
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_nav_list li:hover {
+        background-color: rgba(255, 242, 242, 0.096);
+        transform: scale(1.023);
+    }
+
+    .footer_nav_list li i {
+        font-size: 1.2rem;
+        margin: 0.2rem;
+    }
+    
+    .footer_nav_list li span {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .search_form {
+        max-width: 50%;
+    }
+
+    .search_input {
+        max-width: 100%;
+    }
+    
+    .now_playing * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .aside {
+        height: 0;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .aside_active{
+        height: calc(100vh - 4.5rem - 4.5rem);
+        top: 0;
+    }
+
+}
