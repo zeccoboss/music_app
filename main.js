@@ -5,13 +5,18 @@ const searchInputButtons = document.querySelectorAll('.search_button');
 const clearInputButtons = document.querySelectorAll('.clear_input')
 const asideSection = document.querySelector('.aside');
 const mobileNav = document.querySelector('.header_mobile_nav');
-const curentPlayingContainer = document.querySelector('#now-playing');
+const currentPlayingContainer = document.querySelector('#now-playing');
+const currentMusicPhoto = document.querySelector('#current-music-photo');
+const currentPlayPauseButton = document.querySelector('#current-play-pause-button');
+const playlist = document.querySelector('#play-list-icon');
+const accountDetails = document.querySelector('.account_details');
+const logos = Array.from(document.querySelectorAll('.profile_picture_container'));
 
 // Define global variables
+let navStyle = window.getComputedStyle(mobileNav).display;
 
-
-// Clrear form default behaviour 
-function clearFormBehaviour() {
+// Clear form default behavior
+function clearFormBehavior() {
     searchForm.addEventListener('reset', (e) => {
         e.preventDefault();
     });
@@ -21,14 +26,27 @@ function clearFormBehaviour() {
     });
 }
 
-clearFormBehaviour();
+clearFormBehavior();
 
-// Close the aside if open 
+// Toggle account details
+function showAccountDetails(params) {
+    navStyle === 'flex' ? logos.splice(0, 1) : logos.splice(1);
+    let logo = logos[0];
+
+    logo.addEventListener('click', (event) => {
+        accountDetails.classList.toggle('account_details_active');
+        accountDetails.classList.contains('account_details_active')
+            ? console.log('Account details active!')
+            : console.log('Account details not active');
+    });
+}
+
+showAccountDetails();
+
+// Close the aside if open
 function closeAsideSection() {
-    let navStyle = window.getComputedStyle(mobileNav).display;
-
     // Check if aside is active on mobile device during search
-    if (asideSection.classList.contains('aside_active')  && navStyle === 'flex') {
+    if (asideSection.classList.contains('aside_active') && navStyle === 'flex') {
         asideSection.classList.remove('aside_active');
         console.log('Aside closed!');
     } else {
@@ -36,52 +54,61 @@ function closeAsideSection() {
     }
 }
 
-closeAsideSection()
-
 function searchMusic() {
     let searchInputArray = Array.from(searchInput);
     let searchInputButtonsArray = Array.from(searchInputButtons);
     let clearInputButtonsArray = Array.from(clearInputButtons);
 
-    let inputs = searchInputArray.map(input => input);
-    
-    console.log(inputs);
-    console.log(searchInputButtonsArray);
-    console.log(clearInputButtonsArray);
-    
-    inputs.forEach((inputOfSearch) => {
+    // Check when mobile device is active and hide search input dynamically
+    navStyle === 'flex' ? searchInputArray.splice(0, 1) : searchInputArray.splice(1);
 
-        inputOfSearch.addEventListener('input', (e) => {searchInputArray
-            const searchValue = e.target.value.trim().toLowerCase();
-            console.log(searchValue);
+    const inputOfSearch = searchInputArray[0];
 
-            // Display the search area 
-            searchIsActive();
+    inputOfSearch.addEventListener('input', (e) => {
+        const searchValue = e.target.value.trim().toLowerCase();
+        console.log(searchValue);
 
-            // close aside if active
-            closeAsideSection();
-        });
+        // Display the search area
+        searchIsActive();
+
+        // close aside if active
+        closeAsideSection();
     });
 
-    searchInputButtonsArray.forEach((searchButton) => {
-        searchButton.addEventListener('click', (e) => {
-            inputs.forEach((inputOfSearch) => {
-                inputOfSearch.focus();
-                console.log('Serch button clicked');
-                closeAsideSection();
-            });
-        });
-    });
-
-    clearInputButtonsArray.forEach((inputOfSearch) => {
-        inputOfSearch.addEventListener('keyup', (e) => {
-            const searchValue = e.target.value.trim().toLowerCase();
-            console.log(searchValue);
-        });
-    });
+    searchAndClearActions(searchInputButtonsArray, clearInputButtonsArray, inputOfSearch);
 }
 
 searchMusic();
+
+// Behavior for search form buttons
+function searchAndClearActions(searchInputButtons, clearInputButtons, inputOfSearch) {
+    // Check when mobile device is active and hide clear buttons dynamically
+    navStyle === 'flex' ? searchInputButtons.splice(0, 1) : searchInputButtons.splice(1);
+    navStyle === 'flex' ? clearInputButtons.splice(0, 1) : clearInputButtons.splice(1);
+
+    const searchButton = searchInputButtons[0];
+    const clearButton = clearInputButtons[0];
+
+    // Focus search input when clicked and search data when input has value
+    searchButton.addEventListener('click', (e) => {
+        //
+        inputOfSearch.focus();
+
+        if (!inputOfSearch.value.trim()) {
+            console.warn('No details found!');
+        }
+
+        console.log('Searching...');
+    });
+
+    clearButton.addEventListener('click', (e) => {
+        console.log('Search input cleared');
+        searchInput.value = '';
+
+        // close aside if active
+        closeAsideSection();
+    });
+}
 
 // Get all footer elements
 const home = document.querySelector('#home');
@@ -95,9 +122,8 @@ const searchSection = document.querySelector('.search_section');
 const settingsSection = document.querySelector('.settings_section');
 const librarySection = document.querySelector('.library_section');
 
-// Logic to navigate footer 
+// Logic to navigate footer
 const homeIsActive = () => {
-
     home.addEventListener('click', (event) => {
         home.classList.add('active_section');
         favorite.classList.remove('active_section');
@@ -118,7 +144,6 @@ const homeIsActive = () => {
 homeIsActive();
 
 const favoriteIsActive = () => {
-
     favorite.addEventListener('click', (event) => {
         favorite.classList.add('active_section');
         home.classList.remove('active_section');
@@ -131,14 +156,14 @@ const favoriteIsActive = () => {
         settingsSection.classList.remove('settings_section_active');
         librarySection.classList.remove('library_section_active');
 
-        console.log('Favouritea screen is active');
+        console.log('favorite screen is active');
         closeAsideSection();
     });
 };
 
 favoriteIsActive();
 
-const searchIsActive = () => {
+function searchIsActive() {
     favorite.classList.remove('active_section');
     home.classList.remove('active_section');
     settings.classList.remove('active_section');
@@ -151,11 +176,11 @@ const searchIsActive = () => {
     librarySection.classList.remove('library_section_active');
 
     console.log('Search screen is active');
+    console.log('getting data...');
     closeAsideSection();
-};
+}
 
 const settingsIsActive = () => {
-        
     settings.addEventListener('click', (event) => {
         settings.classList.add('active_section');
         favorite.classList.remove('active_section');
@@ -176,7 +201,6 @@ const settingsIsActive = () => {
 settingsIsActive();
 
 const libraryIsActive = () => {
-        
     library.addEventListener('click', (event) => {
         library.classList.add('active_section');
         settings.classList.remove('active_section');
@@ -196,24 +220,22 @@ const libraryIsActive = () => {
 
 libraryIsActive();
 
-curentPlayingContainer.addEventListener('click', (event) => {
+currentPlayingContainer.addEventListener('click', (event) => {
+    console.log(event);
 
-    asideSection.classList.add('aside_active')
-})
-
+    if (event.target !== currentMusicPhoto && event.target !== currentPlayPauseButton && event.target !== playlist) {
+        asideSection.classList.add('aside_active');
+        console.log('Aside active');
+    }
+});
 
 function defaultProfilePhoto(imgPath) {
     const profileImgs = document.querySelectorAll('.profile_picture');
 
-    profileImgs.forEach(profileImg => {
-        // Clear image src
-        if (profileImg !== '') {
-            profileImg.src = "";
-        }
-
-        // Set default profile image
-        profileImg.src = imgPath;
-    })
+    profileImgs.forEach((profileImg) => {
+        profileImg.src = ''; // Clear profile image
+        profileImg.src = imgPath; // Set default profile image
+    });
 }
 
 defaultProfilePhoto('./img/default_profile.webp')

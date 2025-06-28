@@ -32,6 +32,7 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-y: hidden;
+    position: relative;
 }
 
 a {
@@ -79,20 +80,24 @@ button {
     align-content: center;
     align-items: center;
     cursor: pointer;
+
+    .app_logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 0.5rem;
+        margin-right: var(--MARGIN);
+        transition: var(--TRANSITION);
+        /* box-shadow: 0px 0px 2px green; */
+        filter: drop-shadow(0px 0px 5px rgb(116, 121, 116));
+        
+        &:hover {
+            transform: translateX(-0.3rem);
+            opacity: var(--OPACITY);
+        }
+    }
 }
 
-.app_details .app_logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: var(--MARGIN);
-    transition: var(--TRANSITION);
-}
 
-.app_details .app_logo:hover {
-    transform: translateX(-0.3rem);
-    opacity: var(--OPACITY);
-}
 
 .app_name {
     font-size: 1.5rem;
@@ -102,10 +107,10 @@ button {
     transform: translateY(-0.5rem);
     text-underline-offset: 0.6rem;
     transition: var(--TRANSITION);
-}
 
-.app_name:hover {
-    color: rgb(121, 121, 121);
+    &:hover {
+        color: rgb(121, 121, 121);
+    }    
 }
 
 .search_form{
@@ -165,6 +170,23 @@ button {
     color: red;
 }
 
+.account_details {
+    position: absolute;
+    background-color: rgb(8, 46, 8);
+    right: 0.5rem;
+    top: 4.7rem;
+    width: 5.5rem;
+    padding: 0;
+    height: 0;
+    overflow-y: hidden;
+    transition: var(--TRANSITION);
+}
+
+.account_details_active {
+    padding: var(--PADDING);
+    height: 3.3rem;
+}
+
 .inner_container {
     display: flex;
     height: calc(100vh - 6rem - 6rem);
@@ -204,11 +226,8 @@ button {
 }
 
 .music_container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
     gap: var(--MARGIN);
 }
 
@@ -220,8 +239,15 @@ button {
     border-radius: 0.5rem;
     cursor: pointer;
     flex-grow: 1;
-    width: 6rem;
-    max-width: 8rem;
+    /* width: 6rem;
+    max-width: 8rem; */
+    transition: var(--TRANSITION);
+
+    &:hover {
+        transform: translateY(-0.2rem);
+        box-shadow: 0px 0px 9px hsla(0, 13%, 84%, 0.616);
+        opacity: 0.8;
+    }
 }
 
 .home_music_image_container {
@@ -239,6 +265,7 @@ button {
     height: 100%;
     object-fit: cover;
     border-radius: 0.3rem;
+    transition: var(--TRANSITION);
 }
 
 .music_image_caption {
@@ -275,11 +302,15 @@ button {
     height: 100%;
 }
 
-
 @keyframes fade-active-section {
     0% {
-        opacity: 0;
+        align-self: flex-start;
+        top: 0;
         color: rgba(240, 248, 255, 0.158);
+    }
+
+    50% {
+        opacity: 0.5;
     }
 
     100% {
@@ -312,12 +343,13 @@ button {
     padding: var(--MARGIN);
 }
 
-.curent_music_photo {
+.current_music_photo {
     width: 2rem;
     height: 2rem; 
     border-radius: 0.2rem;  
     box-sizing: 0px 0px 9px rgba(252, 252, 252, 0.632);
     margin-left: var(--MARGIN);
+    cursor: pointer;
 }
 
 .curently_playing {

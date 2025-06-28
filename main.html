@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Hello world
+    </p>
+
+    <figure class="figure">
+        <img src="./img/image.png" alt="pic" loading="lazy" width="250" height="200">
+        <figcaption>Image</figcaption>
+    </figure>
+
+    <figure class="figure">
+        <img src="./img/image.png" alt="pic" loading="lazy" width="250" height="200">
+        <figcaption>Image</figcaption>
+    </figure>
+
+
+    <script>
+        const figure = Array.from(document.querySelector('.figure'));
+        console.log(figure);
+
+        figure.forEach(element => {
+            console.log(element);
+            
+        })
+
+        figure.addEventListener('click', () => console.log('Hey ZECCO'));
+        
+    </script>
+
+</body>
+</html>
